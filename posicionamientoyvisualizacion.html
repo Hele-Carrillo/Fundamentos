@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Posicionamiento y Visualización</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+     <header>
+    <nav>
+      <ul>
+        <li><a href="box-model.html">BOX MODEL</a></li>
+        <li><a href="posicionamientoyvisualizacion.html">POSICIONAMIENTO Y VISUALIZACIÓN</a></li>
+        <li><a href="flexboxygrid.html">FLEXBOX Y GRID</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h1>2. Posicionamiento y Visualización</h1>
+
+  <section>
+    <h2>Display</h2>
+    <p><strong>block:</strong> ocupa todo el ancho (ej: &lt;div&gt;, &lt;p&gt;)</p>
+    <div class="display-block">Soy un div (block)</div>
+
+    <p><strong>inline:</strong> se comporta como texto (ej: &lt;span&gt;)</p>
+    <span class="display-inline">Span 1</span>
+    <span class="display-inline">Span 2</span>
+
+    <p><strong>inline-block:</strong> como inline, pero acepta alto y ancho</p>
+    <span class="display-inline-block">Botón 1</span>
+    <span class="display-inline-block">Botón 2</span>
+
+    <p><strong>none:</strong> este elemento está oculto (no se mostrará)</p>
+    <div class="display-none">No me puedes ver</div>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>Position</h2>
+
+    <div class="static-box">static (posición por defecto)</div>
+    <div class="relative-box">relative (moviéndose un poco)</div>
+    <div class="absolute-container">
+      <div class="absolute-box">absolute (dentro de contenedor relative)</div>
+    </div>
+    <div class="fixed-box">fixed (se queda en pantalla)</div>
+    <div class="sticky-box">sticky (se pega al hacer scroll)</div>
+    <p style="height: 1000px;">Haz scroll para ver el sticky y el fixed.</p>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>z-index</h2>
+    <div class="z-box z1">z-index: 1</div>
+    <div class="z-box z2">z-index: 2</div>
+    <div class="z-box z3">z-index: 3</div>
+  </section>
+
+</body>
+</html>
