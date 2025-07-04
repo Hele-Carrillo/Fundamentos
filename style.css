@@ -71,3 +71,29 @@ h1 {
     color: #7b241c;
     line-height: 100px;
   }
+
+
+
+h2 {
+    text-align: center;
+    color: #333;
+  }
+  .flex-container {
+    display: flex; /* activa flexbox */
+    justify-content: space-around; /* espacio entre elementos */
+    align-items: center; /* alinea verticalmente al centro */
+    background-color: #d1e7dd;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .flex-item {
+    background-color: #0f5132;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+  }
