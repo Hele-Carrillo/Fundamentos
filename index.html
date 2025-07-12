@@ -2,39 +2,51 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Modelo de Caja</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modelo de Caja (Box Model)</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">BOX MODEL</a></li>
-        <li><a href="posicionamientoyvisualizacion.html">POSICIONAMIENTO Y VISUALIZACIÓN</a></li>
-        <li><a href="flexboxygrid.html">FLEXBOX Y GRID</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <nav>
+    <div class="flex-container">
+    <a href="index.html" class="bo">Box Model</a>
+    <a href="posicionamiento.html" class="bo">Posicionamiento</a>
+    <a href="flexbox.html" class="bo">Flexbox y Grid</a>
+    </div>
+  </nav>
+</header>
+<div class="spacer"></div>
+ 
+<main> 
+    
+  <h1>1. Box Model</h1>
+  <p>Es la forma en que CSS estructura todos los elementos como cajas rectangulares. Entender el modelo de caja es clave para controlar el espacio entre elementos y su diseño.</p>
+  <h2>Partes del modelo de caja:</h2>
+  <ul>
+     
+   <pre>  <li >Contenido (content): el texto o imagen dentro del elemento. <br><img src="img/feliz.jpg" > <br></li></pre>
+    
+   <pre> <li>Relleno (padding):espacio entre el contenido y el borde.</li></pre>
+   <pre> <li>Borde (border): el marco que rodea al padding.</li></pre>
+   <pre> <li>Margen (margin): espacio entre el borde del elemento y otros elementos.</li></pre>
+  </ul>
 
-  <div class="decoracion esquina-izq-sup"></div>
-  <div class="decoracion esquina-der-sup"></div>
+  <div class="box-model-example">
+    Ejemplo visual de box model<br />
+    (width: 200px; padding: 10px; border: 2px solid black; margin: 20px)
+  </div>
 
-  <header class="encabezado">
-    <h1>Encabezado adaptable con HTML y CSS</h1>
-    <nav class="nav">
-      <div class="logo">MiLogo</div>
-      <div class="menu">
-        <button>Inicio</button>
-        <button>Servicios</button>
-        <button>Proyectos</button>
-        <button>Contacto</button>
-      </div>
-    </nav>
-  </header>
+  <h2>Propiedad <code>box-sizing</code>:</h2>
+  <p><code>content-box</code> (por defecto): ancho y alto solo incluyen el contenido.<br />
+  <code>border-box</code>: el ancho y alto incluyen padding y border.</p>
 
-  <div class="decoracion esquina-izq-inf"></div>
-  <div class="decoracion esquina-der-inf"></div>
+  <pre>
+* {
+  box-sizing: border-box;
+}
+   
+</main>
 </body>
 </html>
