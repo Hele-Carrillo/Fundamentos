@@ -15,48 +15,43 @@
       </ul>
     </nav>
   </header>
+<div class="spacer"></div>
+
+ <main> 
   <h1>2. Posicionamiento y Visualización</h1>
 
-  <section>
-    <h2>Display</h2>
-    <p><strong>block:</strong> ocupa todo el ancho (ej: &lt;div&gt;, &lt;p&gt;)</p>
-    <div class="display-block">Soy un div (block)</div>
+  <h2>Display block</h2>
+  <pre>
+    <div class="">
 
-    <p><strong>inline:</strong> se comporta como texto (ej: &lt;span&gt;)</p>
-    <span class="display-inline">Span 1</span>
-    <span class="display-inline">Span 2</span>
-
-    <p><strong>inline-block:</strong> como inline, pero acepta alto y ancho</p>
-    <span class="display-inline-block">Botón 1</span>
-    <span class="display-inline-block">Botón 2</span>
-
-    <p><strong>none:</strong> este elemento está oculto (no se mostrará)</p>
-    <div class="display-none">No me puedes ver</div>
-  </section>
-
-  <hr>
-
-  <section>
-    <h2>Position</h2>
-
-    <div class="static-box">static (posición por defecto)</div>
-    <div class="relative-box">relative (moviéndose un poco)</div>
-    <div class="absolute-container">
-      <div class="absolute-box">absolute (dentro de contenedor relative)</div>
     </div>
-    <div class="fixed-box">fixed (se queda en pantalla)</div>
-    <div class="sticky-box">sticky (se pega al hacer scroll)</div>
-    <p style="height: 1000px;">Haz scroll para ver el sticky y el fixed.</p>
-  </section>
+  </pre>
+  <p>Controla cómo se muestra un elemento.</p>
+  <ul>
+    <li>block: ocupa todo el ancho. (Ej. div, p )
+    </li>
+    <li>inline: se comporta como texto. (Ej. span )</li>
+    <li>inline-block: como inline, pero acepta alto y ancho.</li>
+    <li>none: oculta el elemento.</li>
+  </ul>
 
-  <hr>
+  <h2>Position</h2>
+  <p>Controla la ubicación de un elemento.</p>
+  <ul>
+    <li>static: posición normal (por defecto).</li>
+    <li>relative: se puede mover respecto a su posición normal.</li>
+    <li>absolute: se posiciona respecto al contenedor con position: relative.</li>
+    <li>fixed: se queda fijo en la pantalla al hacer scroll.</li>
+    <li>sticky: se comporta como relative hasta cierto punto, luego se queda fijo.</li>
+  </ul>
 
-  <section>
-    <h2>z-index</h2>
-    <div class="z-box z1">z-index: 1</div>
-    <div class="z-box z2">z-index: 2</div>
-    <div class="z-box z3">z-index: 3</div>
-  </section>
+  
+    Ejemplo: cabecera fija con <code>position: fixed</code>
+  </div>
+
+  <h2>z-index</h2>
+  <p>Controla qué elemento se superpone. Cuanto mayor el número, más arriba estará.</p>
+ </main>
 
 </body>
 </html>
