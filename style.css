@@ -1,99 +1,62 @@
+/* Estilos generales */
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f6f7;
-  color: #333;
+  font-family: sans-serif;
+  background-color: #f2f2f2;
   padding: 20px;
 }
 
-/* Navegación */
-header {
-  background: #3498db;
-  padding: 15px 0;
-  margin-bottom: 30px;
-}
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 8px 12px;
-}
-
-h1 {
-  color: #333;
-  margin-bottom: 20px;
-}
-.ejemplo-boxmodel {
-  background: #ffffff;
-  border: 2px solid #ccc;
-  padding: 20px;
-  width: 20%;
-  min-width: 300px;
-}
-
-/* Visualización del modelo de caja */
-.box-model {
-  width: 200px;
-  padding: 20px;
-  border: 5px solid #2e86c1;
-  margin: 20px auto;
-  background: #d6eaf8;
+h1, h2 {
   text-align: center;
-  font-weight: bold;
-  border-radius: 6px;
+  color: #333;
 }
-.caja {
-  width: 200px;
-  height: 100px;
+
+/* Sección de cajas */
+.box-model {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
   padding: 20px;
-  border: 5px solid #333;
-  background-color: #cce5ff;
-  margin: 20px auto;
-  color: #000;
-  font-weight: bold;
-  line-height: 60px;
+  border: 5px solid #000;
+  margin: 10px;
+  background-color: lightcoral;
+  color: white;
+  box-sizing: content-box;
+}
 
- /* Para comparar, una caja con border-box */
-  .caja-border-box {
-    width: 250px;
-    height: 200px;
-    padding: 20px;
-    border: 5px solid #e74c3c;
-    background-color: #f1948a;
-    box-sizing: border-box;
-    margin: 20px auto;
-    font-size: 18px;
-    color: #7b241c;
-    line-height: 100px;
-  }
+.box2 {
+  background-color: mediumseagreen;
+  box-sizing: border-box;
+}
 
+.box3 {
+  background-color: steelblue;
+  padding: 10px;
+  border: 10px dashed #fff;
+  box-sizing: border-box;
+}
 
+/* Sección de botones */
+.botones {
+  text-align: center;
+}
 
-h2 {
-    text-align: center;
-    color: #333;
-  }
-  .flex-container {
-    display: flex; /* activa flexbox */
-    justify-content: space-around; /* espacio entre elementos */
-    align-items: center; /* alinea verticalmente al centro */
-    background-color: #d1e7dd;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  .flex-item {
-    background-color: #0f5132;
-    color: white;
-    padding: 20px 30px;
-    border-radius: 6px;
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-  }
+.btn {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border: 2px solid #333;
+  background-color: #fff;
+  cursor: pointer;
+  box-sizing: content-box;
+}
+
+.btn-border {
+  box-sizing: border-box;
+  background-color: #c1e1c1;
+}
